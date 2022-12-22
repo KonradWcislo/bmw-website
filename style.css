@@ -1,0 +1,97 @@
+:root {
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-blue: #3369d3;
+	--color-gray-1: #e6e6e6;
+	--color-gray-2: #bebebe;
+	--color-gray-3: #a9a7a8;
+	--color-gray-4: #6d6d6d;
+	--color-gray-5: #707070;
+	--color-gray-6: #4e4e4e;
+	--font-open-sans: "Open Sans", sans-serif;
+	--font-cairo: "Cairo", sans-serif;
+	--font-roboto: "Roboto", sans-serif;
+
+	/* BŁĄD W KOLORACH NA ADOBE XD
+    --color-1:#00000000;
+	--color-2:#00000012; */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--font-open-sans);
+}
+/* Header */
+
+header {
+	background-image: url(./assets/slider1@2x_shadow.png);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: var(--color-white);
+}
+
+.header_ctn {
+	width: 960px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 90%;
+}
+
+.nav_ul ul {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	padding: 30px 0;
+}
+
+.nav_ul a {
+	color: var(--color-white);
+	text-decoration: none;
+}
+
+.nav_ul p {
+}
+
+.nav_underline {
+	width: 100%;
+	height: 1px;
+	background-color: var(--color-white);
+	opacity: 0.3;
+	display: block;
+}
+
+.ctn_buttons {
+	display: flex;
+	justify-content: space-around;
+}
+
+.btn_carusele {
+	background-color: #ffffff;
+	padding: 2px 20px;
+	display: inline-block;
+	border: none;
+}
+
+.btn_test_ride {
+	padding: 10px 30px;
+	background-color: var(--color-blue);
+	color: var(--color-white);
+	border: none;
+}
+
+/* Section Facts about BMW */
+
+.ctn_facts-about-bmw {
+	width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
