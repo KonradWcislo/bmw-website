@@ -77,8 +77,10 @@ header {
 	display: block;
 }
 
-.ctn_header_info img, .ctn_header_info h1, .ctn_header_info p{
-padding: 10px 0;
+.ctn_header_info img,
+.ctn_header_info h1,
+.ctn_header_info p {
+	padding: 10px 0;
 }
 
 .ctn_buttons {
@@ -102,70 +104,101 @@ padding: 10px 0;
 
 /* Section Facts about BMW */
 
+.ctn_facts-about-bmw div,
+.ctn_innovations div {
+	width: 600px;
+	gap: 20px;
+}
+
+.ctn_imgs {
+	display: flex;
+	justify-content: space-between;
+}
+
+.ctn_imgs_foto1-1 {
+	margin-top: 300px;
+}
+
+.ctn_img_facts-about {
+	align-items: flex-start;
+}
+
 .ctn_info {
-	width: 1200px;
+	width: 1500px;
 	display: flex;
 	justify-content: space-between;
 	margin: 150px auto;
 }
 
+.tiles_facts {
+	display: flex;
+}
+
+.tiles_facts div {
+	margin-top: 10%;
+}
+
+.tiles_facts p:first-child {
+	border-bottom: 2px solid var(--color-gray-1);
+	font-weight: bold;
+}
+
+.section_underline {
+	width: 20px;
+	height: 2px;
+	background-color: var(--color-gray-2);
+	position: absolute;
+}
+
 /* Section Innovation and Areodynamic */
 
-.ctn_innovation:nth-child(2) {
-	vertical-align: middle;
+.ctn_innovations h1 {
+	width: 200px;
+	margin-bottom: 40px;
+}
+
+.ctn_innovations div p:first-of-type {
+	margin-bottom: 20px;
+	color: var(--color-gray-3);
+}
+
+.ctn_img_innovations {
+	align-items: flex-start;
+}
+
+.ctn_imgs_foto2-2 {
+	margin-top: -100px;
 }
 
 /* Section Pictures */
-.ctn_grid {
+.parent {
 	display: grid;
-	grid-template-columns: 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33%;
-	grid-template-rows: 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33%;
-	width: 100%;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	max-width: 1900px;
 	margin: auto;
 }
 
-.ctn_grid img {
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
-	/* display: inline-block; */
+.div1 {
+	grid-area: 1 / 1 / 3 / 7;
 }
-
-.a {
-	grid-row-start: 1;
-	grid-row-end: 12;
-	grid-column-start: 1;
-	grid-column-end: 6;
+.div2 {
+	grid-area: 1 / 7 / 2 / 9;
 }
-
-.b {
-	grid-row-start: 1;
-	grid-row-end: 6;
-	grid-column-start: 6;
-	grid-column-end: 8;
+.div3 {
+	grid-area: 1 / 9 / 2 / 13;
 }
-.c {
-	grid-row-start: 1;
-	grid-row-end: 6;
-	grid-column-start: 8;
-	grid-column-end: 12;
+.div4 {
+	grid-area: 2 / 7 / 3 / 10;
 }
-
-.d {
-	grid-row-start: 6;
-	grid-row-end: 12;
-	grid-column-start: 6;
-	grid-column-end: 9;
-}
-
-.e {
-	grid-row-start: 6;
-	grid-row-end: 12;
-	grid-column-start: 9;
-	grid-column-end: 12;
+.div5 {
+	grid-area: 2 / 10 / 3 / 13;
 }
 
 /* Section Contact */
+
 .ctn_contact {
 	width: 700px;
 	margin: auto;
