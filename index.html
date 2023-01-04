@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Open+Sans:wght@300;400&family=Roboto:wght@300;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -37,7 +38,7 @@
                     <span class="btn_carusele"></span>
                     <span class="btn_carusele"></span>
                 </div>
-                <button class="btn_test_ride">UMÓW JAZDĘ PRÓBNĄ</button>
+                <button class="btn_test_ride" onclick="openPopup()">UMÓW JAZDĘ PRÓBNĄ</button>
             </div>
         </div>
     </header>
@@ -131,18 +132,26 @@
                 <form>
                     <h4>Wypełnij formularz swoimi danymi.</h4>
                     <div>
-                        <input type="radio" name="flexRadioDefault"><label for="">Pan</label>
-                        <input type="radio" name="flexRadioDefault"> <label for="">Pani</label>
+                        <input type="radio" name="flexRadioDefault" id="Pan"><label for="Pan">Pan</label>
+                        <input type="radio" name="flexRadioDefault" id="Pani"><label for="Pani">Pani</label>
                     </div>
                     <input type="text" placeholder="Imię*">
                     <input type="text" placeholder="Nazwisko*">
                     <input type="text" placeholder="E-mail*">
                     <input type="text" placeholder="Numer Telefonu*">
-                    <button>WYŚLIJ</button>
+                    <button type="submit" onclick="openPopup()">WYŚLIJ</button>
+
                 </form>
             </div>
         </div>
     </section>
+
+    <!-- PopUp -->
+    <div class="popup " id="popup">
+        <h1>DZIĘKUJEMY</h1>
+        <p>Skontaktujemy się z Tobą w najbliższym możliwym terminie</p>
+        <button type="submit" onclick="closePopup()">OK</button>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -154,7 +163,7 @@
                     <img src="./assets/yt_icon.png" alt="">
                     <img src="./assets/ig_icon.png" alt="">
                     <img src="./assets/fb_icon.png" alt="">
-                    <p>Dołącz do nas</p>
+                    <a href="#">Dołącz do nas</a>
                 </div>
                 <span class="footer_underline"></span>
             </div>
@@ -190,6 +199,9 @@
         </div>
     </footer>
     <section class="section_under_footer">©BMW Polska 2020</section>
+
+    <script>
+    </script>
 </body>
 
 </html>

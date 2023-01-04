@@ -87,11 +87,22 @@ header {
 	display: flex;
 }
 
+.ctn_buttons div span:nth-child(2) {
+	margin: 0 10px;
+}
+
 .btn_carusele {
 	background-color: #ffffff;
-	padding: 2px 20px;
+	padding: 3px 35px;
 	display: inline-block;
 	border: none;
+	border-radius: 1px;
+}
+
+.btn_carusele:hover {
+	background-color: var(--color-blue);
+	transition: 0.2s ease-in;
+	cursor: pointer;
 }
 
 .btn_test_ride {
@@ -100,6 +111,11 @@ header {
 	color: var(--color-white);
 	border: none;
 	margin: auto;
+}
+
+.btn_test_ride:hover {
+	opacity: 0.8;
+	cursor: pointer;
 }
 
 /* Section Facts about BMW */
@@ -124,9 +140,9 @@ header {
 }
 
 .ctn_info {
-	width: 1500px;
+	width: 1900px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin: 150px auto;
 }
 
@@ -231,15 +247,28 @@ form {
 	flex-direction: column;
 	padding-right: 150px;
 }
+form > div input {
+	margin-right: 0.5em;
+	cursor: pointer;
+}
+form > div label {
+	margin-right: 1em;
+	cursor: pointer;
+}
 
 form > div {
 	margin-top: 15px;
+	cursor: pointer;
 }
 
 form input {
 	margin: 15px 0;
 	padding: 10px;
 	border: 1px solid var(--color-gray-1);
+}
+
+form label {
+	color: var(--color-gray-4);
 }
 
 form button {
@@ -251,6 +280,58 @@ form button {
 	margin-top: 30px;
 }
 
+form button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.popup {
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--color-black);
+	opacity: 0.9;
+	color: var(--color-white);
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.1);
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	visibility: hidden;
+}
+
+.open-popup {
+	visibility: visible;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h1 {
+	margin-bottom: 20px;
+}
+
+.popup p {
+	width: 300px;
+	margin-bottom: 50px;
+	font-weight: 200;
+}
+
+.popup button {
+	background-color: var(--color-blue);
+	color: var(--color-white);
+	padding: 15px 80px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.popup button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
 /* Footer */
 
 footer {
@@ -273,13 +354,16 @@ footer div {
 	padding: 20px 0;
 }
 
-.social_icons p {
+.social_icons a {
 	color: var(--color-gray-3);
 	align-self: center;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .social_icons img {
 	margin-left: 10px;
+	cursor: pointer;
 }
 
 .footer_underline {
