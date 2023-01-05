@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Open+Sans:wght@300;400&family=Roboto:wght@300;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                     <span class="btn_carusele"></span>
                     <span class="btn_carusele"></span>
                 </div>
-                <button class="btn_test_ride" onclick="openPopup()">UMÓW JAZDĘ PRÓBNĄ</button>
+                <a href="#contact" class="btn_test_ride">UMÓW JAZDĘ PRÓBNĄ</a>
             </div>
         </div>
     </header>
@@ -50,7 +50,7 @@
             <img src="./assets/foto1_2.png" alt="">
         </div>
         <div>
-            <div class="">
+            <div>
                 <h1>FAKTY <br>O NOWYM BMW iX.</h1>
             </div>
             <div>
@@ -120,7 +120,7 @@
     </section>
 
     <!-- Section Contact -->
-    <section>
+    <section id="contact">
         <div class="ctn_contact">
             <div class="ctn_form">
                 <div>
@@ -135,11 +135,11 @@
                         <input type="radio" name="flexRadioDefault" id="Pan"><label for="Pan">Pan</label>
                         <input type="radio" name="flexRadioDefault" id="Pani"><label for="Pani">Pani</label>
                     </div>
-                    <input type="text" placeholder="Imię*">
-                    <input type="text" placeholder="Nazwisko*">
-                    <input type="text" placeholder="E-mail*">
-                    <input type="text" placeholder="Numer Telefonu*">
-                    <button type="submit" onclick="openPopup()">WYŚLIJ</button>
+                    <input id="name" type="text" placeholder="Imię*" required>
+                    <input id="surname" type="text" placeholder="Nazwisko*">
+                    <input id="email" type="text" placeholder="E-mail*">
+                    <input id="phone" type="text" placeholder="Numer Telefonu*">
+                    <button type="button" onclick="openPopup()">WYŚLIJ</button>
 
                 </form>
             </div>
@@ -150,7 +150,7 @@
     <div class="popup " id="popup">
         <h1>DZIĘKUJEMY</h1>
         <p>Skontaktujemy się z Tobą w najbliższym możliwym terminie</p>
-        <button type="submit" onclick="closePopup()">OK</button>
+        <button type="button" onclick="closePopup()">OK</button>
     </div>
 
     <!-- Footer -->

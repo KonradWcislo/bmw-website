@@ -87,6 +87,10 @@ header {
 	display: flex;
 }
 
+.ctn_buttons div {
+	align-self: center;
+}
+
 .ctn_buttons div span:nth-child(2) {
 	margin: 0 10px;
 }
@@ -109,8 +113,9 @@ header {
 	padding: 10px 30px;
 	background-color: var(--color-blue);
 	color: var(--color-white);
-	border: none;
+	text-decoration: none;
 	margin: auto;
+	transition: transform 0.3s;
 }
 
 .btn_test_ride:hover {
@@ -285,6 +290,7 @@ form button:hover {
 	cursor: pointer;
 }
 
+/* Popup */
 .popup {
 	width: 100vw;
 	height: 100vh;
@@ -302,6 +308,7 @@ form button:hover {
 	align-items: center;
 	text-align: center;
 	visibility: hidden;
+	transition: transform 0.3s;
 }
 
 .open-popup {
@@ -329,7 +336,7 @@ form button:hover {
 }
 
 .popup button:hover {
-	opacity: 0.8;
+	opacity: 1;
 	cursor: pointer;
 }
 /* Footer */
@@ -404,4 +411,20 @@ footer div {
 	width: 1200px;
 	margin: 15px auto;
 	color: var(--color-gray-4);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 960px) {
+	header {
+		background-position: center;
+	}
+	.ctn_buttons {
+	}
+
+	.ctn_imgs {
+	}
+
+	.cnt-info {
+	}
 }
